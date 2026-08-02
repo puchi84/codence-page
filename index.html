@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Codence turns customer issues into engineering-ready work with AI-powered triage." />
+  <title>Codence — From customer issue to engineering action</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Codence home">
+      <span class="brand-mark">C</span>
+      <span>Codence</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#product">Product</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+
+    <a class="button button-small button-outline desktop-cta" href="#early-access">Join early access</a>
+
+    <button class="menu-button" id="menuButton" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span>AI engineering triage for SaaS teams</div>
+        <h1>Turn customer issues into <span>engineering action.</span></h1>
+        <p>
+          Codence reads support tickets, finds related context, detects duplicates,
+          and creates engineering-ready issues so your team spends less time
+          investigating and more time fixing.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#early-access">Join the founding beta <b>→</b></a>
+          <button class="button button-secondary" data-scroll="#product">See how it works</button>
+        </div>
+
+        <div class="trust-row">
+          <span>No credit card</span>
+          <i></i>
+          <span>Built for B2B SaaS</span>
+          <i></i>
+          <span>Human review stays in control</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <div class="product-window">
+          <div class="window-bar">
+            <div class="window-dots"><span></span><span></span><span></span></div>
+            <div>Issue intelligence</div>
+            <div class="status"><span></span>Connected</div>
+          </div>
+
+          <div class="product-body">
+            <aside class="mini-sidebar">
+              <div class="mini-logo">C</div>
+              <div class="mini-nav active"></div>
+              <div class="mini-nav"></div>
+              <div class="mini-nav"></div>
+              <div class="mini-nav"></div>
+            </aside>
+
+            <div class="ticket-panel">
+              <small>Incoming support ticket</small>
+              <div class="ticket-card">
+                <div class="ticket-meta">
+                  <span class="badge">Bug</span>
+                  <span>#4821</span>
+                </div>
+                <h3>Customer export fails after filtering by date</h3>
+                <p>Exporting more than 500 rows returns a timeout for enterprise accounts.</p>
+                <div class="customer">
+                  <span>AC</span>
+                  <div>
+                    <strong>Acme Cloud</strong>
+                    <small>Enterprise · £42k ARR</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="analysis-panel">
+              <div class="analysis-head">
+                <div>
+                  <small>Codence analysis</small>
+                  <h3>Engineering context ready</h3>
+                </div>
+                <span>✦</span>
+              </div>
+
+              <div class="insight-grid">
+                <div><span>Likely service</span><strong>Reporting API</strong></div>
+                <div><span>Priority</span><strong class="high">High</strong></div>
+                <div><span>Similar issues</span><strong>7 found</strong></div>
+                <div><span>Confidence</span><strong>91%</strong></div>
+              </div>
+
+              <div class="root-cause">
+                <div><span>Suggested root cause</span><b>High confidence</b></div>
+                <p>Date filtering bypasses the cached export path introduced in release v2.18.0.</p>
+              </div>
+
+              <div class="issue-output">
+                <div><span>GitHub issue draft</span><b>Ready to review</b></div>
+                <ul>
+                  <li>Reproduction steps generated</li>
+                  <li>Customer impact attached</li>
+                  <li>Related tickets linked</li>
+                </ul>
+                <button type="button">Create issue <span>→</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-card left">
+          <span>↗</span>
+          <div><strong>64% faster triage</strong><small>Less engineering investigation</small></div>
+        </div>
+
+        <div class="floating-card right">
+          <span>◎</span>
+          <div><strong>7 duplicates found</strong><small>Before a new issue was created</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-strip">
+      <p>Designed to work with the tools your teams already use</p>
+      <div>
+        <span>Zendesk</span><span>Freshdesk</span><span>GitHub</span>
+        <span>Jira</span><span>Linear</span><span>Slack</span>
+      </div>
+    </section>
+
+    <section class="section" id="product">
+      <div class="section-heading centered reveal">
+        <div class="eyebrow">The gap between support and engineering</div>
+        <h2>Customer issues lose context before they reach developers.</h2>
+        <p>Codence connects customer knowledge with engineering context without adding another manual process.</p>
+      </div>
+
+      <div class="problem-grid">
+        <article class="problem-card reveal">
+          <span class="number">01</span>
+          <div class="icon">⌁</div>
+          <h3>Incomplete bug reports</h3>
+          <p>Developers receive vague issues without reproduction steps, customer impact, or technical context.</p>
+        </article>
+        <article class="problem-card reveal">
+          <span class="number">02</span>
+          <div class="icon">◌</div>
+          <h3>Duplicate investigation</h3>
+          <p>Teams repeatedly investigate issues that already exist across support, Slack, and GitHub.</p>
+        </article>
+        <article class="problem-card reveal">
+          <span class="number">03</span>
+          <div class="icon">↯</div>
+          <h3>Slow customer resolution</h3>
+          <p>Critical issues wait while teams manually gather the information needed to begin work.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section workflow-section" id="how-it-works">
+      <div class="workflow-copy reveal">
+        <div class="eyebrow">One intelligent workflow</div>
+        <h2>From noisy ticket to clear engineering action.</h2>
+        <p>Every recommendation stays reviewable before it is sent to engineering.</p>
+
+        <div class="workflow-steps">
+          <button class="workflow-step active" data-step="0">
+            <span>1</span><div><h3>Connect your tools</h3><p>Bring in tickets, code, issues, and documentation.</p></div>
+          </button>
+          <button class="workflow-step" data-step="1">
+            <span>2</span><div><h3>Understand the issue</h3><p>Codence classifies, summarises, and enriches every ticket.</p></div>
+          </button>
+          <button class="workflow-step" data-step="2">
+            <span>3</span><div><h3>Find related evidence</h3><p>Surface duplicates, previous fixes, and affected services.</p></div>
+          </button>
+          <button class="workflow-step" data-step="3">
+            <span>4</span><div><h3>Create engineering-ready work</h3><p>Review and send a complete issue to GitHub, Jira, or Linear.</p></div>
+          </button>
+        </div>
+      </div>
+
+      <div class="workflow-visual reveal">
+        <div class="flow-card source">
+          <span>Z</span><div><strong>Zendesk</strong><small>Customer ticket</small></div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-core">
+          <div class="core-logo">C</div>
+          <strong>Codence</strong>
+          <span id="workflowStatus">Connecting context</span>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-card output">
+          <span>✓</span><div><strong>Engineering task</strong><small>Ready to review</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="benefits">
+      <div class="section-heading reveal">
+        <div class="eyebrow">Built for the whole product organisation</div>
+        <h2>One platform. Better outcomes for every team.</h2>
+      </div>
+
+      <div class="benefit-grid">
+        <article class="benefit-card featured reveal">
+          <span>Engineering</span>
+          <h3>Start with context, not questions.</h3>
+          <p>Receive complete issues with reproduction steps, related incidents, likely ownership, and customer impact.</p>
+          <div class="metric"><strong>6.4 hrs</strong><small>saved per engineer each month</small></div>
+        </article>
+        <article class="benefit-card reveal">
+          <span>Support</span>
+          <h3>Escalate confidently.</h3>
+          <p>Give customers clearer updates and send engineering the right information the first time.</p>
+          <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="benefit-card reveal">
+          <span>Leadership</span>
+          <h3>See the real customer impact.</h3>
+          <p>Understand issue trends, affected revenue, repeat problems, and engineering effort.</p>
+          <div class="impact"><div><strong>£184k</strong><small>ARR affected</small></div><div><strong>23%</strong><small>repeat issues</small></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section security-section">
+      <div class="security-card reveal">
+        <div>
+          <div class="eyebrow">Secure by design</div>
+          <h2>Your code and customer data stay under your control.</h2>
+          <p>Codence is designed around least-privilege access, clear data boundaries, and human review.</p>
+        </div>
+        <div class="security-list">
+          <div><span>✓</span>Read-only integrations by default</div>
+          <div><span>✓</span>Granular workspace permissions</div>
+          <div><span>✓</span>Configurable data retention</div>
+          <div><span>✓</span>No autonomous code changes</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="section-heading centered reveal">
+        <div class="eyebrow">Founding customer programme</div>
+        <h2>Start small. Prove the value. Scale with confidence.</h2>
+        <p>Early pricing for teams helping shape the first version of Codence.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <span>Pilot</span>
+          <h3>£99<small>/month</small></h3>
+          <p>For early teams validating the workflow.</p>
+          <ul><li>Up to 500 tickets/month</li><li>1 support integration</li><li>1 engineering integration</li><li>AI issue summaries</li><li>Duplicate detection</li></ul>
+          <a class="button button-secondary full" href="#early-access">Join the pilot</a>
+        </article>
+
+        <article class="price-card recommended reveal">
+          <div class="recommended-badge">Most popular</div>
+          <span>Growth</span>
+          <h3>£299<small>/month</small></h3>
+          <p>For scaling SaaS teams with regular escalations.</p>
+          <ul><li>Up to 2,500 tickets/month</li><li>Multiple integrations</li><li>Root-cause suggestions</li><li>Customer impact analysis</li><li>Priority onboarding</li></ul>
+          <a class="button button-primary full" href="#early-access">Become a design partner</a>
+        </article>
+
+        <article class="price-card reveal">
+          <span>Scale</span>
+          <h3>Custom</h3>
+          <p>For larger teams with security and workflow needs.</p>
+          <ul><li>Custom ticket volume</li><li>SSO and permissions</li><li>Custom data retention</li><li>Dedicated setup</li><li>Priority support</li></ul>
+          <a class="button button-secondary full" href="#early-access">Talk to us</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="early-access">
+      <div class="cta-panel reveal">
+        <div>
+          <div class="eyebrow">Limited founding beta</div>
+          <h2>Help shape the future of customer-to-engineering workflows.</h2>
+          <p>We are inviting a small group of B2B SaaS teams to test Codence and receive founding-customer pricing.</p>
+        </div>
+
+        <form id="signupForm" action="https://formspree.io/f/mwvgdzln" method="POST">
+          <label>Work email<input type="email" id="email" name="email" placeholder="you@company.com" required></label>
+          <label>Company size
+            <select id="companySize" name="companySize" required>
+              <option value="" disabled selected>Select company size</option>
+              <option>1–20 employees</option>
+              <option>21–50 employees</option>
+              <option>51–200 employees</option>
+              <option>201–500 employees</option>
+              <option>500+ employees</option>
+            </select>
+          </label>
+          <input type="hidden" name="_subject" value="New Codence beta signup">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
+          <button class="button button-primary full" type="submit">Request early access →</button>
+          <small>No spam. We will only contact you about the Codence beta.</small>
+          <div id="formSuccess" class="form-success" role="status">Thanks — your request has been recorded.</div>
+          <div id="formError" class="form-error" role="alert">Something went wrong sending your request. Please try again or email us at <a href="mailto:hello@codence.ai">hello@codence.ai</a>.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a class="brand" href="#top"><span class="brand-mark">C</span><span>Codence</span></a>
+      <p>Engineering intelligence for customer issues.</p>
+    </div>
+    <div class="footer-links"><a href="#product">Product</a><a href="#how-it-works">How it works</a><a href="#pricing">Pricing</a><a href="mailto:hello@codence.ai">Contact</a></div>
+    <div class="footer-bottom"><span>© 2026 Codence</span><span>Built for teams that care about customers and code.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
