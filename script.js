@@ -54,13 +54,16 @@ const submitButtonDefaultLabel = submitButton.innerHTML;
 signupForm.addEventListener('submit', async (event) => {
   event.preventDefault();
 
+  const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
+  const companyName = document.getElementById('companyName').value.trim();
   const companySize = document.getElementById('companySize').value;
+  const supportTool = document.getElementById('supportTool').value;
 
   formSuccess.classList.remove('show');
   formError.classList.remove('show');
 
-  if (!email || !companySize) return;
+  if (!name || !email || !companyName || !companySize || !supportTool) return;
 
   submitButton.disabled = true;
   submitButton.textContent = 'Sending…';

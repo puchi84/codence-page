@@ -305,7 +305,9 @@
         </div>
 
         <form id="signupForm" action="https://formspree.io/f/mwvgdzln" method="POST">
+          <label>Name<input type="text" id="name" name="name" placeholder="Jane Doe" required></label>
           <label>Work email<input type="email" id="email" name="email" placeholder="you@company.com" required></label>
+          <label>Company name<input type="text" id="companyName" name="companyName" placeholder="Acme Cloud" required></label>
           <label>Company size
             <select id="companySize" name="companySize" required>
               <option value="" disabled selected>Select company size</option>
@@ -314,6 +316,18 @@
               <option>51–200 employees</option>
               <option>201–500 employees</option>
               <option>500+ employees</option>
+            </select>
+          </label>
+          <label>Current support tool
+            <select id="supportTool" name="supportTool" required>
+              <option value="" disabled selected>Select current support tool</option>
+              <option>Zendesk</option>
+              <option>Freshdesk</option>
+              <option>Intercom</option>
+              <option>Help Scout</option>
+              <option>Jira Service Management</option>
+              <option>Other</option>
+              <option>None yet</option>
             </select>
           </label>
           <input type="hidden" name="_subject" value="New Codence beta signup">
