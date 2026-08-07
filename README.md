@@ -7,6 +7,8 @@ A responsive, modern light-theme landing page for Codence.
 - `index.html` — page structure and content
 - `styles.css` — responsive design and animations
 - `script.js` — mobile menu, scroll interactions, workflow demo, and beta form
+- `robots.txt` — crawler rules, points search engines to the sitemap
+- `sitemap.xml` — lists indexable pages for search engines
 
 ## Run locally
 
@@ -42,3 +44,25 @@ That's it — no other code changes are needed. Each submission arrives as an em
 - A hidden honeypot field (`_gotcha`) is included to reduce spam without a CAPTCHA.
 - The free Formspree tier allows a limited number of submissions per month; upgrade if you expect higher volume.
 - If the request fails (network issue, invalid endpoint, etc.), the form shows an inline error message asking the visitor to email `hello@codence.ai` directly instead.
+
+## SEO setup
+
+The site is configured for `https://www.thecodence.com`. If you deploy to a different domain, update these before going live:
+
+- `<link rel="canonical">` in [index.html](index.html)
+- `og:url`, `og:image` in the Open Graph tags
+- `twitter:image` in the Twitter card tags
+- The `url`/`image`/`logo` fields in the JSON-LD `SoftwareApplication` structured data block
+- `sitemap.xml` (`<loc>` entry) and `robots.txt` (`Sitemap:` line)
+
+### Recommended launch checklist
+
+1. Submit `https://www.thecodence.com/sitemap.xml` to [Google Search Console](https://search.google.com/search-console) and Bing Webmaster Tools once the domain is live.
+2. Request indexing for the homepage in Search Console after DNS/hosting is set up.
+3. Keep the meta `description` and `title` in [index.html](index.html) unique and under ~160 / ~60 characters if copy changes.
+4. Build backlinks (directories like BetaList, Product Hunt, G2, relevant SaaS/dev communities) — off-page signals matter more than on-page tags for ranking #1.
+5. Add real testimonials/case studies once available; fresh, unique content is a strong ranking factor.
+
+### Pricing section
+
+Public pricing intentionally does not show figures. During the beta, the "Pilot" and "Growth" cards display "Founding rate" (feature lists still shown) and every plan links to the `#early-access` form so exploratory visitors aren't scared off before they see the product's value. Update the copy in the `#pricing` section of [index.html](index.html) once public pricing is finalized.
